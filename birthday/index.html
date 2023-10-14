@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passcode Verification</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="showFormButton">Enter My Phone Passcode to acess</button>
+    <div id="passcodeForm" class="hidden">
+      <form id="passcodeInputForm">
+        <label for="passcode">Enter Passcode: Hint 45**</label>
+        <input type="text" id="passcode" name="passcode" />
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <p id="errorText" class="hidden">Incorrect Passcode</p>
+    </div>
+    <div id="surprise" class="hidden">
+      <h1>Happy Birthday! 🎂❤️</h1>
+      <!-- Add icons or any other birthday surprise elements here -->
+      <div class="icons">
+        <!-- You can add icons or images here -->
+      </div>
+      <div class="button-container">
+        <!--<button id="writeUpButton">Write-Up</button>-->
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-mdb-toggle="modal"
+          data-mdb-target="#exampleModal"
+          id="writeUpButton"
+        >
+          Write-Up
+        </button>
+        <!-- Button trigger modal for surprise button -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-mdb-toggle="modal"
+          data-mdb-target="#staticBackdrop"
+          id="viewSurpriseButton"
+        >
+          View Surprise
+        </button>
+      </div>
+      <!-- Modal for write up button -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">
+                Happy Birthday/Anniversary baby ❤️🎊
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-mdb-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                I would like to start off this writing by giving thanks to God
+                for this amazing day in which he brought you into life and that
+                of mine as well 😌😉, He deserves all the honors.<br /><br />
+                Going further to expatiate more on this writing ✍️, I would like
+                to wish you a heartfelt happy birthday or should i say big 24
+                🤭, don’t look at me now oo, you know what I mean 😏. As you add
+                +1 today unto your former age, I pray that the Lord will
+                continue to see you through in all you do babe, May you always
+                remain happy and filled with joy knowing that it shall be well,
+                May God guide your paths as you embark on all journeys of life
+                this Mother Earth as to offer, May you succeed in all your
+                endeavors and that which you put your heart and efforts
+                into.…(Amen 🙏). <br /><br />
+
+                It’s been an amazing time with you, despite the turbulences and
+                shaky-emotions, I think I’m right to say it’s really been an
+                amazing thing to experience it with you baby. I tend to
+                recognize all of this as part of being together, we have really
+                come a long way , perhaps half a long way🤔, anyways both still
+                stands as time in which both of us as spent together. it’s
+                hasn’t been easy, considering our distance but despite it we
+                keep moving forward, and that’s the goal. I want to thank you
+                for the support and steadiness you have brought to our
+                relationship although the emotions is a bit high 🤭, I’m still
+                grateful for what’ you have been showing and putting as well. It
+                takes two to tango , and we are sure Tangoing despite the
+                challenges. I still love you despite all these turbulences, I
+                know I have said in past days how my emotions has been weak, but
+                if you look at it t closely, they weren’t even weak it was just
+                my minds weakness but not the feelings I have for you. In all
+                this I still want you as mine and none other . I still want to
+                be a part of you in the best way I can ❤️. <br /><br />
+
+                Today will make it a year of us being together, phew 😮‍💨, time
+                really do flies . For me it’s as though we just started
+                yesterday 🤭, all parts of you make me tickle and you know they
+                do 😏. I have missed quite a lot, your touch, the warm cuddles ,
+                the going outs, the close affection and talks, the Segs 🤭, and
+                quite more …… I can’t wait to recollect this memories once more
+                with you. I pray for more years of us together 🫂 and I still
+                wanna cherish more memories and moments with. I love the
+                momentum at which we keep going, and we should keep doing so
+                Everly and also progressing in all which we want to change
+                amongst us . <br /><br />
+
+                I love you baby 🥰, and I want to wish you a happy birthday once
+                more , I’m proud of you ❤️.<br /><br />
+
+                Yours lovely,<br />
+                Chef ❤️.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-mdb-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal for write up button -->
+
+      <!-- Modal for Surprise  button -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-mdb-backdrop="static"
+        data-mdb-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">
+                To my Babe, whom i cherish most ❤️
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-mdb-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./img/Acrylic Gold Geometric Circle Happy 24th Cake Topper.jpeg"
+                      class="card-img-top"
+                      alt="Hollywood Sign on The Hill"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Birthday Cake 🎂</h5>
+                      <p class="card-text">
+                        we would be getting the cake today, i hope we see a good
+                        design that would replicate ur 24th bday.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./img/babeswatch.jpg"
+                      class="card-img-top"
+                      alt="Palm Springs Road"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Casio Amazing Vintage Wrist Watch
+                      </h5>
+                      <p class="card-text">
+                        Delivery between 24 October and 26 October @ 13 Mbanefo
+                        Street, off Down Chime Road , New Haven, Enugu State. ,
+                        Opposite First Bank
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./img/a9a8e2ojavck44kjo0zr.jpg"
+                      class="card-img-top"
+                      alt="Los Angeles Skyscrapers"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">22GB Monthly Data</h5>
+                      <p class="card-text">
+                        Main intent is for you to use it to access the
+                        web-projet and courses you are acquiring from your
+                        brother's learning platform. I am proud of what you have
+                        done thus far, keep it up✍️.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img
+                      src="./img/Shoprite-Coronavirus-and-Spar.png"
+                      class="card-img-top"
+                      alt="Skyscrapers"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Small shopping/Outing</h5>
+                      <p class="card-text">
+                        I would leave this one for you to decide babe 😉,
+                        SHOPRITE or SPAR ?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-mdb-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Modal for Surprise  button -->
+    </div>
+
+    <!-- Scrollable modal -->
+
+    <script src="script.js"></script>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"
+    ></script>
+  </body>
+</html>

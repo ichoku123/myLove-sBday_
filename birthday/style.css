@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#showFormButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+#passcodeForm,
+#errorText {
+  text-align: center;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+/* ... (previous code) */
+
+#surprise {
+  text-align: center;
+  display: none;
+}
+
+#surprise h1 {
+  font-size: 32px;
+}
+
+.icons {
+  /* Style your birthday icons here */
+  /* Example: */
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* margin-top: 20px; */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+#writeUpButton,
+#viewSurpriseButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+#writeUpButton:hover,
+#viewSurpriseButton:hover {
+  background-color: #0056b3;
+}
